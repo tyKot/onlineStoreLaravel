@@ -1,0 +1,139 @@
+/* Profile */
+.user__reset-password{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.user__reset-password+.btn:hover {
+    color: #fa0201
+}
+
+.exchange-arrow {
+    width: 50px;
+}
+
+.exchange-group input {
+    width: 20%;
+    height: 40px;
+}
+
+.exchange-mili {
+    display: flex;
+    align-items: stretch;
+    font-size: 20px;
+}
+
+.exchange .mili-balance {
+    margin: 0;
+}
+.exchange-submit {
+    padding: 39px 37px 36px 44px;
+    position: relative;
+    font-family: laCartoonerie, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fa0201;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.exchange-submit::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 95%;
+    height: 80%;
+    background: url(img/link-border.svg) center center/cover no-repeat;
+    transition: transform .3s
+}
+
+@media(min-width: 992px) {
+    .exchange-submit:hover::after {
+        transform: rotate(13deg)
+    }
+
+    .exchange-submit:active {
+        opacity: .5
+    }
+}
+
+.exchange-submit::after {
+    top: 12px
+}
+
+
+
+h3.block__name {
+    color: #000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.orders__block h3.block__name {
+    color: #000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #A8A8A8;
+}
+
+
+.orders__product {
+    padding: 8px 12px;
+    border-bottom: 1px solid #A8A8A8;
+}
+
+.orders__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+
+.orders__date {
+    font-weight: 400;
+    font-size: 14px;
+    color: #707070;
+}
+.product__name{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    line-height: initial;
+
+}
+.product__name>*:not(.product__category){
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.product__category{
+    color: #707070;
+    font-size: 12px;
+}
+
+.empty-history{
+    margin: 5px auto;
+    width: fit-content;
+}
+
+.product__image{
+    width: 80px;
+    height: auto;
+}
+
+/* .waiting,.complete{
+    width: 100px;
+} */

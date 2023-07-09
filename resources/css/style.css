@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: laCartoonerie;
+    src: url(fonts/laCartoonerie.woff2);
+    font-weight: 400;
+    font-display: swap
+}
+
+:root {
+    --swiper-navigation-size: 62px !important;
+}
+
+.swiper-button-next {
+    width: 20px;
+    height: 120%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #000;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px;
+    background: #ffffffd4;
+    transition: 0.3s;
+}
+
+.swiper-button-prev {
+    width: 20px;
+    height: 120%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #000;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px;
+    background: #ffffffd4;
+    transition: 0.3s;
+}
+
+.swiper-button-prev:hover {
+    opacity: 0.5;
+}
+
+.swiper-button-next:hover {
+    opacity: 0.5;
+}
+
+* {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    /*font-weight: 400;*/
+    font-weight: 700;
+    line-height: inherit;
+    color: inherit
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none
+}
+
+ol, ul {
+    list-style: none
+}
+
+img {
+    max-width: 100%
+}
+
+blockquote, figure, li, ol, p, span, time, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    letter-spacing: inherit
+}
+
+b {
+    font-weight: bold
+}
+
+time {
+    display: inline-block
+}
+
+address {
+    font-style: normal
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    cursor: pointer
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    display: none
+}
+
+strong {
+    font-weight: 700;
+}
+
+table{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-control{
+    border:1px solid #A8A8A8!important;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1230px
+}
+
+.section {
+    /* padding: 50px 0; */
+    padding: 30px 0;
+    background-color: #fff
+}
+
+.section-secondary {
+     /* padding: 30px 0 75px 0; */
+    padding: 30px 0 50px 0;
+}
+
+.section__title {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 55px;
+    text-transform: uppercase
+}
+
+.section__title-secondary {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: uppercase
+}
+
+@media(max-width: 1199px) {
+    .section {
+        padding: 50px 0
+    }
+
+    .section-secondary {
+        padding: 40px 0 50px
+    }
+
+    .section__title-secondary {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 39px;
+        letter-spacing: .05em;
+        text-transform: initial
+    }
+
+    .container {
+        padding: 0 50px
+    }
+}
+
+@media(max-width: 991px) {
+    .container {
+        padding: 0 20px
+    }
+}
+
+@media(max-width: 767px) {
+    .section__title {
+        font-size: 36px;
+        line-height: 45px
+    }
+}
+
+@media(max-width: 575px) {
+    .container {
+        padding: 0 10px
+    }
+
+    .section {
+        padding: 40px 0
+    }
+
+    .section-secondary {
+        padding: 20px 0 40px
+    }
+
+    .section__title {
+        font-size: 30px;
+        line-height: 39px
+    }
+}
+
+
+.profile .container {
+    padding: 50px 0;
+}
+
+
+
+.block {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 25px 30px;
+    height: 100%;
+}
+
+
+.block p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.cart__block,
+.map__block {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 25px 30px;
+    height: 100%;
+    margin: 25px 0;
+}
+
+.name__block {
+    color: #000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    /* padding-bottom: 10px; */
+}
+
+
+.name__block-sup {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #656565;
+}
+
+table.table-products {
+    border-bottom: 1px solid rgba(51, 51, 51, .4);
+    border-top: 1px solid rgba(51, 51, 51, .4);
+}
+
+.row-prod {
+    padding: 10px 0;
+    border-bottom: 1px #A8A8A8 solid;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    align-items: center;
+}
+.row-prod:last-child{
+    border-bottom:none;
+}
+
+.table-products td,
+.table-products th {
+    border: 0;
+}
+
+.id_prod,
+.name_prod,
+.price_prod {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.price_prod img[alt='mili'] {
+    width: 22px;
+    height: 22px;
+}
+
+.delete_prod img {
+    width: 80%;
+}
+
+
+.order {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.order_price {
+    margin: 0;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.total_price {
+    margin: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.btn-order {
+    color: #fff;
+    background-color: #df2b2b;
+    width: 202px;
+    height: 50px;
+}
+
+.btn-order:hover {
+    background-color: #b42424;
+    color: #fff;
+}
+
+.ymap {
+    width: 100%;
+    height: 400px;
+    background-color: #626262;
+}
+
+.quantity_prod {
+    display: inline-flex;
+}
+
+.qty {
+    border: none;
+    width: 32px;
+    height: 30px;
+    align-self: stretch;
+    outline: none;
+    text-align: center;
+}
+
+.price_prod {
+    display: flex;
+    align-items: center;
+}
+
+
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.btn_qty-down,.btn_qty-up {
+    border-radius: 5px ;
+}
+
+
+
+.quantity_prod .btn_qty-up::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
